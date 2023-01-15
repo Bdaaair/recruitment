@@ -40,8 +40,8 @@ def get_user_skills():
     skills = []
     skil1 = int(input("Choose a skill from above by entering its number: "))
     skil2 = int(input("Choose another skill from above by entering its number: "))
-    # skills.append(skil1)
-    # skills.append(skil2)
+    skills.append(skil1)
+    skills.append(skil2)
     if skil1 == 1:
         skills.append("eating")
     elif skil1 == 2:
@@ -73,57 +73,29 @@ def get_user_skills():
     print(*skills,sep='\n')
 get_user_skills()
 
-    
-    # if skil1 == 1:
-    #     skills.append("eating")
-    # elif skil1 == 2:
-    #     skills.append("python")
-    # elif skil1 == 3:
-    #     skills.append("C++")
-    # elif skil1 == 4:
-    #     skills.append("Javascript")
-    # elif skil1 == 5:
-    #     skills.append("juggling")
-    # elif skil1 == 6:
-    #     skills.append("running")
-    # else:
-    #     print("try again")
-    # if skil2 == 1:
-    #     skills.append("eating")
-    # elif skil2 == 2:
-    #     skills.append("python")
-    # elif skil2 == 3:
-    #     skills.append("C++")
-    # elif skil2 == 4:
-    #     skills.append("Javascript")
-    # elif skil2 == 5:
-    #     skills.append("juggling")
-    # elif skil2 == 6:
-    #     skills.append("running")
-    # else:
-    #     print("try again")
-
 
 
 # # This function will get the user's cv from their inputs
 # # HINT: Use previous built functions to get the skills from the user
 def get_user_cv(skills):
     cv = {
-        "name" : "",
-        "age" : "",
-        "experience" : ""
+        "age" : "iuyouyuio",
+        "experience" : "ljkhkj"
     }
     name = input("What's your name ? ")
     age = input("How old are you ? ")
     experience = input("How many years of experience do you have ? ")
+    cv["name"] = name 
+    print(cv)
 
-
+    
+get_user_cv(20)
 
 #     ...
 
 
 # # This functions checks if the cv is acceptable or not, by checking the age, experience and skills and return a boolean (True or False) based on that
-def check_acceptance(cv, desired_skill):
+# def check_acceptance(cv, desired_skill):
 #     ...
 
 
