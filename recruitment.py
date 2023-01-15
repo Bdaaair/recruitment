@@ -4,15 +4,21 @@
 # welcome1 = ("Welcome to the special recruitment program, please answer the following questions:")
 # print(welcome1)
 def get_skills():
-    # name = input("what is you name ? :")
-    # age = int(input("how old are you ? :"))
-    # experniece = int("input(How many years of experience do you have ?")
-    skils_list = ["1.eating",
-     "2.coding",
-     "3.fishing"
-     ]
-    # print(skils_list)
-    return skils_list
+    index = 1
+    skils_list = [
+        "eating",
+        "python",
+        "C++",
+        "Javascript",
+        "juggling",
+        "running",
+        ]
+    for skill in skils_list:
+        print(index, skill)
+        index += 1
+
+        # return skill
+# get_skills()
 
 
 
@@ -30,38 +36,94 @@ show_skills()
 # # HINT: Use previous built functions to show the skills
 # # For example, if the user enters 1, the first skill in your list of skills will be added to the list
 # # Return a list of the two skills that the user inputted
-def get_user_skills(skills):
+def get_user_skills():
     skills = []
-
-    user_skills = int(input("e5tar law sma7t : "))
-    if user_skills == 1:
-    print (skills.append("eating"))
-    elif user_skills == 2
-    print (skills.append("coding"))
-    elif user_skills == 3
-    print (skills.append("fishing"))
+    skil1 = int(input("Choose a skill from above by entering its number: "))
+    skil2 = int(input("Choose another skill from above by entering its number: "))
+    # skills.append(skil1)
+    # skills.append(skil2)
+    if skil1 == 1:
+        skills.append("eating")
+    elif skil1 == 2:
+        skills.append("python")
+    elif skil1 == 3:
+        skills.append("C++")
+    elif skil1 == 4:
+        skills.append("Javascript")
+    elif skil1 == 5:
+        skills.append("juggling")
+    elif skil1 == 6:
+        skills.append("running")
     else:
         print("try again")
+    if skil2 == 1:
+        skills.append("eating")
+    elif skil2 == 2:
+        skills.append("python")
+    elif skil2 == 3:
+        skills.append("C++")
+    elif skil2 == 4:
+        skills.append("Javascript")
+    elif skil2 == 5:
+        skills.append("juggling")
+    elif skil2 == 6:
+        skills.append("running")
+    else:
+        print("try again")
+    print(*skills,sep='\n')
+get_user_skills()
 
-
-    user_skills2 = int(input("e5tar again law sma7t : " ))
-
-    # print (user_skills)
-get_user_skills(show_skills())
-#     print(show_skills())
-# get_user_skills(get_skills())
     
+    # if skil1 == 1:
+    #     skills.append("eating")
+    # elif skil1 == 2:
+    #     skills.append("python")
+    # elif skil1 == 3:
+    #     skills.append("C++")
+    # elif skil1 == 4:
+    #     skills.append("Javascript")
+    # elif skil1 == 5:
+    #     skills.append("juggling")
+    # elif skil1 == 6:
+    #     skills.append("running")
+    # else:
+    #     print("try again")
+    # if skil2 == 1:
+    #     skills.append("eating")
+    # elif skil2 == 2:
+    #     skills.append("python")
+    # elif skil2 == 3:
+    #     skills.append("C++")
+    # elif skil2 == 4:
+    #     skills.append("Javascript")
+    # elif skil2 == 5:
+    #     skills.append("juggling")
+    # elif skil2 == 6:
+    #     skills.append("running")
+    # else:
+    #     print("try again")
 
 
 
 # # This function will get the user's cv from their inputs
 # # HINT: Use previous built functions to get the skills from the user
-# def get_user_cv(skills):
+def get_user_cv(skills):
+    cv = {
+        "name" : "",
+        "age" : "",
+        "experience" : ""
+    }
+    name = input("What's your name ? ")
+    age = input("How old are you ? ")
+    experience = input("How many years of experience do you have ? ")
+
+
+
 #     ...
 
 
 # # This functions checks if the cv is acceptable or not, by checking the age, experience and skills and return a boolean (True or False) based on that
-# def check_acceptance(cv, desired_skill):
+def check_acceptance(cv, desired_skill):
 #     ...
 
 
